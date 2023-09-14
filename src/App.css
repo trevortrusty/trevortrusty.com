@@ -1,0 +1,85 @@
+.App {
+  /* text-align: center; */
+  background-color: #2a2149;
+  z-index: -3;
+  position: relative; /* Add this line */
+}
+
+.splash {
+  width: 100%;
+  top: 25%;
+  position: fixed;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.left-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.catSVG {
+  width: 100%; /* Set the width to 100% to make it responsive */
+  max-width: 300px; /* You can set a maximum width if needed */
+  height: auto; /* Let the height adjust proportionally */
+}
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffff;
+}
+
+.footer {
+  position: relative; /* Add this line */
+  flex: auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  align-self: flex-start;
+  text-align: left;
+  font-size: calc(1px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.waves {
+
+  /* position:absolute; */
+  /* top:0; */
+  aspect-ratio: 960/540;
+  width: 100%;
+  z-index: 0;
+  flex: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./layered-waves-haikei.svg');
+}
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
