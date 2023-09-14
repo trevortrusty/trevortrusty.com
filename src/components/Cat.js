@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-
+import styles from './Cat.module.css'; // Import the CSS module
 
 function Cat() {
     const [leftEyePos, setLeftEyePos] = useState(78.004); 
@@ -43,7 +43,7 @@ function Cat() {
     }, [ellipsis])
 
     return (
-    <div>
+    <div className={styles.catContainer}>
         <div className="svg-container">
             <svg className='catSVG'
             width="105mm"

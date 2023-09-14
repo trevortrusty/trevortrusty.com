@@ -1,0 +1,24 @@
+.catContainer {
+    /* Your styling for the Cat component here */
+    width: 100%;
+    top: 25%;
+    position: fixed;
+    /* ...other styles... */
+}
+
+.catSVG {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    /* ...other styles... */
+}
+
+.left-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: max-content;
+    white-space: nowrap;
+    /* ...other styles... */
+}
