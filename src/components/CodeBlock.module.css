@@ -1,4 +1,25 @@
 .block {
-    border: 1px solid #ddd;
-    padding: 10px;
+    display: block;
+    border: .1px solid #00e1ff;
+    padding: .8em;
+    width:fit-content;
+    border-radius: 10px;
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: #141516;
+    font-size: .8rem;
+    white-space: pre;
+    tab-size: 4;
+    text-align: left;  
+}
+
+.copyBtn {
+    position: relative;
+    float: right;
+    border: .1px solid #00e1ff;
+    color: #ffffff;
+    user-select: none;
+}
+
+.copyBtn:hover {
+    color: #00fff2;
 }

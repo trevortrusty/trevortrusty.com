@@ -10,7 +10,7 @@ function Cat() {
     const [ellipsis, animateEllipsis] = useState("");
 
     const addDot = () => {
-        if(ellipsis == "...")
+        if(ellipsis === "...")
         {
             animateEllipsis("");
         }

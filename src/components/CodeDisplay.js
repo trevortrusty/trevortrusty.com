@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import Prism from 'prismjs';
-import styles from './CodeBlock.module.css'
+import styles from './CodeDisplay.module.css'
 
 
-function CodeBlock({ children}) {
+function CodeDisplay({ children}) {
 
     useEffect(() => {
 
@@ -11,10 +11,9 @@ function CodeBlock({ children}) {
 
     return (
     <div className={styles.block}>
-        <div className={styles.copyBtn}>COPY</div>
         {children}
     </div>
   )
 }
 
-export default CodeBlock
+export default CodeDisplay

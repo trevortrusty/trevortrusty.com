@@ -1,0 +1,13 @@
+.block {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: .9rem;
+    padding: 10px;
+    border-left: 3px solid #da1515;
+    /* margin-left: 20px;
+    margin-top: 20px; */
+    background-color: rgb(2, 2, 3);
+    white-space: pre;
+    tab-size: 4;
+    width: fit-content;
+    margin: auto;
+}
