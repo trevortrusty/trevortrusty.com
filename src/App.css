@@ -3,26 +3,13 @@
   padding: 0;
 
 }
-
-Parallax {
-  width: 100%;
-  height: 500px;
-}
-
 .App {
   /* text-align: center; */
     background-color: #001220;
-  /* z-index: -1; */
-  position: relative; /* Add this line */
-  overflow-x:hidden;
+  /* z-index: -1; */ 
+  /* overflow-x:hidden; */
   width: 100%;
 }
-
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -31,7 +18,19 @@ a:hover, a:visited, a:link, a:active {
   width:99%;
   align-items: center;
 }
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.firstName {
+  margin-left: 10px;
+  font-weight: 600;
+}
 
+.lastName {
+  color: #61dafb96 !important;
+  font-weight: 400;
+}
 .nav-left {
   /* border: 1px solid white; */
   font-family: 'Oswald', sans-serif;
@@ -56,72 +55,6 @@ a:hover, a:visited, a:link, a:active {
   font-size: calc(2px + 2vmin);
 }
 
-.navBtnGithub {
-  /* justify-self: flex-end;
-  flex:auto;
-  text-align: right; */
-  
-  /* margin:auto; */
-  /* float: right; */
-}
-
-.navBtnProjects {
-  /* justify-self: flex-end;
-  flex:.12;
-  text-align: right; */
-  
-  /* margin:auto; */
-  /* float: right; */
-}
-
-.firstName {
-  margin-left: 10px;
-  font-weight: 600;
-}
-
-.lastName {
-  color: #61dafb96 !important;
-  font-weight: 400;
-}
-
-.splash {
-  width: 100%;
-  top: 25%;
-  position: fixed;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-
-
-}
-
-.left-text {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: left;
-  width: max-content;
-  white-space: nowrap;
-}
-
-.catSVG {
-  width: 100%; /* Set the width to 100% to make it responsive */
-  max-width: 300px; /* You can set a maximum width if needed */
-  height: auto; /* Let the height adjust proportionally */
-  @media (max-width: 800px){
-    max-width: 200px;
-  }
-  @media (max-width: 400px){
-    max-width: 100px;
-  }
-}
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-container {
   text-align: center;
   min-height: 100vh;
@@ -134,31 +67,24 @@ a:hover, a:visited, a:link, a:active {
   font-family: 'Kanit', sans-serif;
 }
 
-.footer {
-  /* flex: auto; */
-  margin-top: auto;
-  font-size: calc(1px + 2vmin);
-  text-align: left;
-  width: 100%;
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .section-1 {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./layered-waves-haikei(5).svg');
+  /* border: 1px solid white; */
+}
+
+
+.section-1-content {
   aspect-ratio: 960/300;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex: auto;
   align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url('./layered-waves-haikei(5).svg');
   /* border: 1px solid white; */
 }
 
@@ -207,18 +133,24 @@ h1 h3 .flex-1 {
 .section-2 {
   aspect-ratio: 960/300;
   width: 100%;
-  /* z-index: -1; */
   flex: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url('./layered-waves-haikei(6).svg');
 }
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* .section-2 {
+  
+  background-image: url('./layered-waves-haikei(6).svg');
 } */
+
+.footer {
+  /* flex: auto; */
+  margin-top: auto;
+  font-size: calc(1px + 2vmin);
+  text-align: left;
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
