@@ -12,11 +12,10 @@ function App() {
     <div className="App">
       
       <div className="App-container">
-        <Cat />
         <div className='nav'>
           <div className='nav-left'>
-            <p className='firstName'>TREVOR</p>
-            <p className='lastName'>TRUSTY</p>
+            <a href='http://www.google.com' className='firstName'>TREVOR</a>
+            <a href='http://www.google.com' className='lastName'>TRUSTY</a>
           </div>
           <div className='nav-right'>
             <a className='navBtnGithub'>GITHUB</a>
@@ -29,7 +28,7 @@ function App() {
             <h3>ELEVATE YOUR DIGITAL WORLD</h3>
           </div>
           <div className='flex-2'>
-            <img className='laptop' width='50%' src={laptop}/>
+            <img className='laptop' width='80%' src={laptop}/>
             {/* <CodeDisplay>//ReactJS..</CodeDisplay>
             <CodeDisplay>//NextJS...</CodeDisplay>
             <CodeDisplay>//Node.....</CodeDisplay>
