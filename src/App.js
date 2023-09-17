@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <Parallax className="App-container" pages={1} style={{ top: '0', left: '0' }}>
+      <Parallax className="App-container" pages={2} style={{ top: '0', left: '0' }}>
         <ParallaxLayer offset={0} speed={2.5}>
         <div className='nav'>
           <div className='nav-left'>
