@@ -6,8 +6,17 @@ import Cat from './components/Cat.js'
 import CodeBlock from './components/CodeBlock';
 import CodeDisplay from './components/CodeDisplay';
 import laptop from './blender_laptop.png'
+import laptopOn from './blender_laptop_temple.png'
+
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useState } from 'react';
 function App() {
+  const [laptopState, setLaptopState] = useState(false);
+  const toggleLaptopState = () => {
+    setLaptopState(!laptopState);
+    console.log(laptopState);
+  }
+
   return (
     <div className="App">
       
@@ -28,7 +37,11 @@ function App() {
             <h3>ELEVATE YOUR DIGITAL WORLD</h3>
           </div>
           <div className='flex-2'>
-            <img className='laptop' width='80%' src={laptop}/>
+            {
+              laptopState ? 
+              <img onClick={toggleLaptopState} className='laptop' width='80%' src={laptopOn}/>
+                : <img onClick={toggleLaptopState} className='laptop' width='80%' src={laptop}/>
+            }
             {/* <CodeDisplay>//ReactJS..</CodeDisplay>
             <CodeDisplay>//NextJS...</CodeDisplay>
             <CodeDisplay>//Node.....</CodeDisplay>
