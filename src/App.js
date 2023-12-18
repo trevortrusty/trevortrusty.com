@@ -7,7 +7,7 @@ import CodeBlock from './components/CodeBlock';
 import CodeDisplay from './components/CodeDisplay';
 import laptop from './blender_laptop.png'
 import laptopOn from './blender_laptop_temple.png'
-
+import Waves from './components/Waves';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 function App() {
@@ -23,8 +23,8 @@ function App() {
       <div className="App-container">
         <div className='nav'>
           <div className='nav-left'>
-            <a href='http://www.google.com' className='firstName'>TREVOR</a>
-            <a href='http://www.google.com' className='lastName'>TRUSTY</a>
+            <a href='./' className='firstName'>TREVOR</a>
+            <a href='./' className='lastName'>TRUSTY</a>
           </div>
           <div className='nav-right'>
             <a className='navBtnGithub'>GITHUB</a>
@@ -32,9 +32,10 @@ function App() {
           </div>
         </div>
         <div className='section-1'>
+          
           <div className='flex-1'>  
-            <h1>FULL STACK <span className='developer'>DEVELOPER</span></h1>
-            <h3>ELEVATE YOUR DIGITAL WORLD</h3>
+            <h1>FULL STACK <span className='developer'>DEVELOPER,</span></h1>
+            <h3>SOFTWARE CREATOR & MUSICIAN</h3>
           </div>
           <div className='flex-2'>
             {
@@ -50,7 +51,21 @@ function App() {
             
           </div>
         </div>
-        <div className='section-2'></div>
+        <div className='section-2'>
+          <div className='left-spacer'></div>
+          <div className='flex-3'>  
+            {/* <p>Wayne State University graduate with a passion for</p>
+            <p>web development. I'm experienced building software with the</p>
+            <p>agile method using various languages and stacks.</p>   */}
+          </div>
+          <div className='flex-2'>
+            {
+            //  <h3>hi</h3>
+            }
+            {}
+            
+          </div>          
+        </div>
 
 
         <div className='footer'>
