@@ -21,6 +21,17 @@ function App() {
     <div className="App">
       
       <div className="App-container">
+        <Parallax pages={2}>
+
+        <ParallaxLayer 
+          className='section-1-background'
+          offset={0.1}
+          speed={.2}
+          factor={1} 
+        />
+
+        <ParallaxLayer
+        offset={0}>
         <div className='nav'>
           <div className='nav-left'>
             <a href='./' className='firstName'>TREVOR</a>
@@ -31,9 +42,15 @@ function App() {
             <a className='navBtnProjects'>PORTFOLIOLI</a>
           </div>
         </div>
-        <div className='section-1'>
-          
-          <div className='flex-1'>  
+        </ParallaxLayer>
+        
+        <ParallaxLayer 
+          className='section-1'
+          speed={.03}
+          offset={-.12}
+   
+          >
+        <div className='flex-1'>  
             <h1>FULL STACK <span className='developer'>DEVELOPER,</span></h1>
             <h3>SOFTWARE CREATOR & MUSICIAN</h3>
           </div>
@@ -43,37 +60,16 @@ function App() {
               <img onClick={toggleLaptopState} className='laptop' width='80%' src={laptopOn}/>
                 : <img onClick={toggleLaptopState} className='laptop' width='80%' src={laptop}/>
             }
-            {/* <CodeDisplay>//ReactJS..</CodeDisplay>
-            <CodeDisplay>//NextJS...</CodeDisplay>
-            <CodeDisplay>//Node.....</CodeDisplay>
-            <CodeDisplay>//MySQL....</CodeDisplay>
-            <CodeDisplay>//C++......</CodeDisplay> */}
             
           </div>
-        </div>
-        <div className='section-2'>
-          <div className='left-spacer'></div>
-          <div className='flex-3'>  
-            {/* <p>Wayne State University graduate with a passion for</p>
-            <p>web development. I'm experienced building software with the</p>
-            <p>agile method using various languages and stacks.</p>   */}
-          </div>
-          <div className='flex-2'>
-            {
-            //  <h3>hi</h3>
-            }
-            {}
-            
-          </div>          
-        </div>
-
-
-        <div className='footer'>
-          <p>SOFTWARE SOFTWARE</p>
-          <p>TREVORTRUSTY.COM</p>
-          <p>making SOFTWARE since 1999</p>
-          <p>MAINTAINED BY BIG SOFTWARE INC</p>
-        </div>
+        </ParallaxLayer>
+        <ParallaxLayer 
+          className='section-2-background'
+          offset={.68}
+          speed={.2}
+          factor={1} 
+        />
+        </Parallax>
       </div>
     </div>
   );
