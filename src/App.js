@@ -47,7 +47,7 @@ function App() {
         <ParallaxLayer 
           className='section-1'
           speed={.03}
-          offset={-.12}
+          offset={-.09}
    
           >
         <div className='flex-1'>  
