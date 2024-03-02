@@ -171,9 +171,21 @@ a:hover, a:visited, a:link, a:active {
   background-image: url('./layered-waves-haikei(5).svg'); */
   /* border: 1px solid white; */
 
-  background-image: url('./wavys.svg');
+  background-image: url('./wavyfull2.svg');
   /* display: flex; */
-  width: 50%;
+  background-size:contain !important;
+  @media (max-width: 1400px) {
+    background-image: url('./wavy1400x500.svg');
+  }
+  @media (max-width: 1200px) {
+    background-image: url('./wavy1200x500.svg');
+  }
+  @media (max-width: 1080px) {
+    background-image: url('./wavy1080x500.svg');
+  }
+  @media (max-width: 900px) {
+    background-image: url('./wavy500x500.svg');
+  }
 }
 .waves {
   position: relative;
@@ -195,6 +207,16 @@ a:hover, a:visited, a:link, a:active {
     h3 {
       font-size: 12pt;
     }
+  }
+  @media (max-width:560px) {
+    text-align: center;
+    margin: 7px;
+  }
+}
+
+.flex-2 {
+  @media (max-width: 560px) {
+    display: none;
   }
 }
 
@@ -242,9 +264,10 @@ h1 h3 .flex-1 {
   flex-grow: 3;
 }
 
-.section-2-background {
+/* .section-2-background {
   background-image: url('./wavys2.svg');
-}
+  background-size:contain !important;
+} */
 
 .section-2 {
   aspect-ratio: 960/300;

@@ -2,6 +2,7 @@
 import logo from './Cat.svg';
 import waves from './layered-waves-haikei.svg';
 import './App.css';
+import React from 'react';
 import Cat from './components/Cat.js'
 import CodeBlock from './components/CodeBlock';
 import CodeDisplay from './components/CodeDisplay';
@@ -12,6 +13,16 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 function App() {
   const [laptopState, setLaptopState] = useState(false);
+  const [topOffset, setTopOffset] = useState(0);
+
+  React.useEffect(() => {
+    if (window.innerWidth <= 390) {
+      setTopOffset(0.15);
+    } else {
+      setTopOffset(0);
+    }
+  }, [window.innerWidth]);
+
   const toggleLaptopState = () => {
     setLaptopState(!laptopState);
     console.log(laptopState);
@@ -25,13 +36,15 @@ function App() {
 
         <ParallaxLayer 
           className='section-1-background'
-          offset={0.1}
+          offset={0.45 - topOffset}
           speed={.2}
           factor={1} 
         />
 
         <ParallaxLayer
-        offset={0}>
+        offset={0}
+        speed={1}
+        >
         <div className='nav'>
           <div className='nav-left'>
             <a href='./' className='firstName'>TREVOR</a>
@@ -47,7 +60,7 @@ function App() {
         <ParallaxLayer 
           className='section-1'
           speed={.03}
-          offset={-.09}
+          offset={-.09 - topOffset}
    
           >
         <div className='flex-1'>  
