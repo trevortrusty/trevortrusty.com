@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       
       <div className="App-container">
-        <Parallax pages={2}>
+        <Parallax pages={3}>
 
         <ParallaxLayer 
           className='section-1-background'
@@ -52,7 +52,7 @@ function App() {
           </div>
           <div className='nav-right'>
             <a className='navBtnGithub'>GITHUB</a>
-            <a className='navBtnProjects'>PORTFOLIOLI</a>
+            <a className='navBtnProjects'>PORTFOLIO</a>
           </div>
         </div>
         </ParallaxLayer>
@@ -63,7 +63,7 @@ function App() {
           offset={-.09 - topOffset}
    
           >
-        <div className='flex-1'>  
+          <div className='flex-1'>  
             <h1>FULL STACK <span className='developer'>DEVELOPER,</span></h1>
             <h3>SOFTWARE CREATOR & MUSICIAN</h3>
           </div>
@@ -82,7 +82,50 @@ function App() {
           speed={.2}
           factor={1} 
         />
+        <ParallaxLayer 
+          className='section-2'
+          speed={.03}
+          offset={.9}
+        > 
+        </ParallaxLayer>
+        <ParallaxLayer 
+          className='section-3'
+          speed={.9}
+          offset={1}
+        >
+        </ParallaxLayer>
+        <ParallaxLayer 
+          className='section-3-content'
+          speed={1.1}
+          offset={1.2}
+        >
+          <h1>Software Projects</h1>
+          <p>Check out my latest web and various software projects</p>
+        </ParallaxLayer>
+        <ParallaxLayer 
+          className='section-4'
+          id='container-3dprint'
+          speed={1}
+          offset={1.9}
+        >
+        </ParallaxLayer>
+        <ParallaxLayer 
+          className='section-4-content'
+          id='content-3dprint'
+          speed={1.2}
+          offset={1.99999}
+        >
+          <h1>3D Printing</h1>
+          <p>See what I'm working on with CAD and my FDM printer!</p>
+        </ParallaxLayer>
+        {/* <ParallaxLayer 
+          className='section-3'
+          speed={1}
+          offset={2}
+        >
+        </ParallaxLayer> */}
         </Parallax>
+        
       </div>
     </div>
   );

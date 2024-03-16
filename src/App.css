@@ -28,7 +28,7 @@ a:hover, a:visited, a:link, a:active {
   justify-content: flex-start;
   width: 100%;
   padding: 10px;
-  width:99%;
+  width:97%;
   align-items: center;
 }
 
@@ -130,7 +130,7 @@ a:hover, a:visited, a:link, a:active {
 
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.7vmin);
   color: #ffff;
   font-family: 'Kanit', sans-serif;
 }
@@ -150,29 +150,17 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .section-1 {
+  z-index: 0;
   aspect-ratio: 960/300;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex: auto;
   align-items: center;
-  /* border: 1px solid white; */
 }
 .section-1-background {
-  /* aspect-ratio: 960/300;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex: auto;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url('./layered-waves-haikei(5).svg'); */
-  /* border: 1px solid white; */
-
+  
   background-image: url('./wavyfull2.svg');
-  /* display: flex; */
   background-size:contain !important;
   @media (max-width: 1400px) {
     background-image: url('./wavy1400x500.svg');
@@ -194,18 +182,51 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .flex-1 {
-  
   font-weight: 400;
   /* text-align: left; */
   /* border: 1px solid white; */
   flex: 7;
   text-align: right;
+  @media (max-width:1330px) {
+    h1 {
+      font-size: 45pt;
+    }
+  }
+  @media (max-width:1200px) {
+    h1 {
+      font-size: 40pt;
+    }
+    h3 {
+      font-size: 24pt;
+    }
+  }
+  @media (max-width:1000px) {
+    h1 {
+      font-size: 35pt;
+    }
+    h3 {
+      font-size: 20pt;
+    }
+  }
+  @media (max-width:900px) {
+    h1 {
+      font-size: 30pt;
+    }
+    h3 {
+      font-size: 18pt;
+    }
+  }
   @media (max-width:450px) {
     h1 {
       font-size: 25pt;
     }
     h3 {
       font-size: 12pt;
+    }
+  }
+  @media (max-width:400px) {
+    h1 {
+      font-size: 21pt;
     }
   }
   @media (max-width:560px) {
@@ -227,9 +248,8 @@ h1 h3 .flex-1 {
 
 .flex-2 {
 
+  
   font-weight: 400;
-  /* text-align: left; */
-  /* border: 1px solid white; */
   flex: 4;
 }
 
@@ -270,7 +290,6 @@ h1 h3 .flex-1 {
 } */
 
 .section-2 {
-  aspect-ratio: 960/300;
   font-family: 'Oswald', sans-serif;
   text-align: left;
   width: 100%;
@@ -278,16 +297,79 @@ h1 h3 .flex-1 {
   display: flex;
   flex-direction: row;
   flex: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url('./wavys2.svg');
+
 }
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+.section-3 {
+  /* font-family: 'Oswald', sans-serif;
+  text-align: left; */
+  width: 100%;
+  /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  max-height: 600px;
+  background-color: #162744;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.section-3-content {
+  padding: 1%;
+  max-height: 180px;
+  max-width: 800px;
+  text-align: left;
+  margin-left:20%;
+  flex:auto;
+  border-left: 5px solid #ff7300;
+  background-color:#636a7050 ;
+}
+
+.section-3-content:hover {
+  background-color:#a4aeb879 ;
+}
+
+#container-3dprint {
+  /* font-family: 'Oswald', sans-serif;
+  text-align: left; */
+  width: 100%;
+  /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  max-height: 600px;
+  background-image: url('./circles.svg');
+  background-size:contain !important;
+  -webkit-clip-path: polygon(0 0, 100% 6%, 100% 90%, 0 90%);
+  clip-path: polygon(0 0, 100% 6%, 100% 90%, 0 90%);
+  /* background-blend-mode:soft-light; */
+}
+
+#content-3dprint {
+  padding: 1%;
+  max-height: 180px;
+  max-width: 800px;
+  text-align: right;
+  margin-left:30%;
+  flex:auto;
+  border-right: 5px solid #18d131;
+  background-color:#636a7079 ;
+}
+
+#content-3dprint:hover {
+  background-color:#a4aeb879 ;
+}
+
+.section-5 {
+  /* font-family: 'Oswald', sans-serif;
+  text-align: left; */
+  width: 100%;
+  /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  max-height: 600px;
+  background-color: #142f52;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
