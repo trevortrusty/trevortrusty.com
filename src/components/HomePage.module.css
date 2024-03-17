@@ -1,0 +1,122 @@
+.appContainer {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1.7vmin);
+    color: #ffff;
+    font-family: 'Kanit', sans-serif;
+  }
+
+Parallax {
+    width: 100%;
+    height: 500px;
+}
+
+.section1 {
+    display: flex;
+}
+
+.section1background {
+    background-image: url('../wavyfull2.svg');
+    background-size:contain !important;
+    @media (max-width: 1400px) {
+        background-image: url('../wavy1400x500.svg');
+    }
+    @media (max-width: 1200px) {
+        background-image: url('../wavy1200x500.svg');
+    }
+    @media (max-width: 1080px) {
+        background-image: url('../wavy1080x500.svg');
+    }
+    @media (max-width: 900px) {
+        background-image: url('../wavy500x500.svg');
+    }
+}
+  
+.section2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+  
+.section3 {
+    /* font-family: 'Oswald', sans-serif;
+    text-align: left; */
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-height: 600px;
+    background-color: #162744;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+  
+.section3content {
+    padding: 1%;
+    max-height: 180px;
+    max-width: 800px;
+    text-align: left;
+    margin-left:20%;
+    flex:auto;
+    border-left: 5px solid #ff7300;
+    background-color:#636a7050 ;
+}
+  
+.section3content:hover {
+    background-color:#a4aeb879 ;
+}
+  
+#container3dprint {
+    /* font-family: 'Oswald', sans-serif;
+    text-align: left; */
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-height: 600px;
+    background-image: url('../circles.svg');
+    background-size:contain !important;
+    -webkit-clip-path: polygon(0 0, 100% 6%, 100% 90%, 0 90%);
+    clip-path: polygon(0 0, 100% 6%, 100% 90%, 0 90%);
+    /* background-blend-mode:soft-light; */
+}
+  
+#content3dprint {
+    padding: 1%;
+    max-height: 180px;
+    max-width: 800px;
+    text-align: right;
+    margin-left:30%;
+    flex:auto;
+    border-right: 5px solid #18d131;
+    background-color:#636a7079 ;
+}
+  
+#content3dprint:hover {
+    background-color:#a4aeb879 ;
+}
+  
+.section5 {
+    /* font-family: 'Oswald', sans-serif;
+    text-align: left; */
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-height: 600px;
+    background-color: #142f52;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}

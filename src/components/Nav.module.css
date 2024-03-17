@@ -1,0 +1,59 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    width:97%;
+    align-items: center;
+  }
+  
+.navLeft {
+/* border: 1px solid white; */
+font-family: 'Oswald', sans-serif;
+
+display: flex;
+gap: 3px;
+justify-content: flex-start;
+
+.firstName {
+    margin-left: 10px;
+    font-weight: 600;
+}
+  
+.lastName {
+    color: #61dafb96 !important;
+    font-weight: 400;
+}
+
+/* padding-left: 50px;
+padding-right: 70px; */
+user-select: none;
+flex: 1;
+}
+
+.navRight {
+flex: 1;
+justify-content: flex-end;
+display: flex;
+gap: 20px;
+font-family: 'Josefin Sans', sans-serif;
+font-size: calc(2px + 2vmin);
+}
+
+.navBtnGithub {
+/* justify-self: flex-end;
+flex:auto;
+text-align: right; */
+
+/* margin:auto; */
+/* float: right; */
+}
+
+.navBtnProjects {
+/* justify-self: flex-end;
+flex:.12;
+text-align: right; */
+
+/* margin:auto; */
+/* float: right; */
+}
