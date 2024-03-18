@@ -14,6 +14,8 @@ import HomeTopIntro from './components/HomeTopIntro.js';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 import HomePage from './components/HomePage.js';
+import PrintsPage from './components/PrintsPage.js';
+
 function App() {
   const [laptopState, setLaptopState] = useState(false);
   const [topOffset, setTopOffset] = useState(0);
@@ -37,6 +39,7 @@ function App() {
       <div className="App-container">
         
         <HomePage />
+        {/* <PrintsPage /> */}
         
       </div>
     </div>

@@ -8,36 +8,36 @@
   }
   
 .navLeft {
-/* border: 1px solid white; */
-font-family: 'Oswald', sans-serif;
+    /* border: 1px solid white; */
+    font-family: 'Oswald', sans-serif;
 
-display: flex;
-gap: 3px;
-justify-content: flex-start;
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
 
-.firstName {
-    margin-left: 10px;
-    font-weight: 600;
-}
-  
-.lastName {
-    color: #61dafb96 !important;
-    font-weight: 400;
-}
+    .firstName {
+        margin-left: 10px;
+        font-weight: 600;
+    }
+    
+    .lastName {
+        color: #61dafb96 !important;
+        font-weight: 400;
+    }
 
-/* padding-left: 50px;
-padding-right: 70px; */
-user-select: none;
-flex: 1;
+    /* padding-left: 50px;
+    padding-right: 70px; */
+    user-select: none;
+    flex: 1;
 }
 
 .navRight {
-flex: 1;
-justify-content: flex-end;
-display: flex;
-gap: 20px;
-font-family: 'Josefin Sans', sans-serif;
-font-size: calc(2px + 2vmin);
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(2px + 2vmin);
 }
 
 .navBtnGithub {

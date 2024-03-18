@@ -15,7 +15,7 @@ function HomePage() {
           setTopOffset(0);
         }
       }, [window.innerWidth]);
-  return (
+    return (
     <div className={styles.appContainer}>
         <Parallax pages={3}>
 
@@ -29,6 +29,9 @@ function HomePage() {
             <ParallaxLayer
                 offset={0}
                 speed={1}
+                style={{
+                    zIndex: 500
+                }}
             >
                 <Nav />
             </ParallaxLayer>
