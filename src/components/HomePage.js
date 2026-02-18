@@ -6,7 +6,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useState } from 'react';
 
 
-function HomePage() {
+function HomePage({ setView }) {
     const [topOffset, setTopOffset] = useState(0);
     React.useEffect(() => {
         if (window.innerWidth <= 390) {
@@ -51,10 +51,12 @@ function HomePage() {
             >
             </ParallaxLayer>
 
-            <ParallaxLayer 
+            <ParallaxLayer
                 className={styles.section3content}
                 speed={1.1}
                 offset={1.2}
+                onClick={() => setView('software')}
+                style={{ cursor: 'pointer' }}
             >
                 <h1>Software Projects</h1>
                 <p>Check out my latest web and various software projects</p>
@@ -68,11 +70,13 @@ function HomePage() {
             >
             </ParallaxLayer>
 
-            <ParallaxLayer 
+            <ParallaxLayer
                 className={styles.section4content}
                 id={styles.content3dprint}
                 speed={1.2}
                 offset={1.99999}
+                onClick={() => setView('prints')}
+                style={{ cursor: 'pointer' }}
             >
             <h1>3D Printing</h1>
             <p>See what I'm working on with CAD and my FDM printer!</p>

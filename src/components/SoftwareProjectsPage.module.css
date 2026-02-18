@@ -1,0 +1,156 @@
+.appContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #001220;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.navWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #001220cc;
+    backdrop-filter: blur(4px);
+}
+
+.parallax {
+    width: 100%;
+    height: 100%;
+}
+
+.ghostLayer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4vw;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.ghostNum {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20vw;
+    font-weight: 700;
+    opacity: 0.05;
+    color: #61dafb;
+    user-select: none;
+    line-height: 1;
+}
+
+.contentLayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.card {
+    background-color: #636a7050;
+    border-left: 5px solid #61dafb;
+    padding: 2rem 2.5rem;
+    max-width: 700px;
+    width: 80%;
+    text-align: left;
+}
+
+.projectTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #61dafb;
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.divider {
+    height: 2px;
+    background: #61dafb44;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.tag {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 0.75rem;
+    color: #61dafb;
+    border: 1px solid #61dafb88;
+    padding: 2px 10px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: #61dafb;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+
+.link:hover {
+    opacity: 0.75;
+}
+
+.dots {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff22;
+    border: 1px solid #61dafb66;
+    transition: background 0.3s;
+}
+
+.dotActive {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #61dafb;
+    border: 1px solid #61dafb;
+    transition: background 0.3s;
+}
+
+@media (max-width: 560px) {
+    .card {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .projectTitle {
+        font-size: 1.5rem;
+    }
+    .ghostNum {
+        font-size: 30vw;
+    }
+}

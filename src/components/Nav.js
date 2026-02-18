@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Nav.module.css'
 
 
-function Nav() {
+function Nav({ onBack }) {
   return (
     <div>
         <div className={styles.nav}>
@@ -11,8 +11,13 @@ function Nav() {
                 <a href='./' className={styles.lastName}>TRUSTY</a>
             </div>
             <div className={styles.navRight}>
-                <a className={styles.navBtnGithub}>GITHUB</a>
-                <a className={styles.navBtnProjects}>PORTFOLIO</a>
+                {onBack
+                  ? <button className={styles.navBtnBack} onClick={onBack}>← BACK</button>
+                  : <>
+                      <a className={styles.navBtnGithub}>GITHUB</a>
+                      <a className={styles.navBtnProjects}>PORTFOLIO</a>
+                    </>
+                }
             </div>
         </div>
     </div>

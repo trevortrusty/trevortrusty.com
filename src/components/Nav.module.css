@@ -57,3 +57,19 @@ text-align: right; */
 /* margin:auto; */
 /* float: right; */
 }
+
+.navBtnBack {
+    background: transparent;
+    border: 1px solid #61dafb;
+    color: #61dafb;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(2px + 2vmin);
+    padding: 4px 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+
+.navBtnBack:hover {
+    background: #61dafb22;
+}
