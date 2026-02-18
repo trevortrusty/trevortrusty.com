@@ -56,7 +56,7 @@ function HomePage({ setView }) {
                 speed={1.1}
                 offset={1.2}
                 onClick={() => setView('software')}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', height: 'fit-content' }}
             >
                 <h1>Software Projects</h1>
                 <p>Check out my latest web and various software projects</p>
@@ -76,7 +76,7 @@ function HomePage({ setView }) {
                 speed={1.2}
                 offset={1.99999}
                 onClick={() => setView('prints')}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', height: 'fit-content' }}
             >
             <h1>3D Printing</h1>
             <p>See what I'm working on with CAD and my FDM printer!</p>
